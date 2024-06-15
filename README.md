@@ -40,7 +40,7 @@
 
 ![image](https://github.com/huedo2102/Crew-recruitment-and-management-website/assets/118194834/892f7464-98e6-4716-96c1-30b38090d5d8)
 
-#Link web: 
-Trang admin: https://nhatvietshipping.io.vn/thuyenvien
+#Link web: https://nhatvietshipping.io.vn/thuyenvien
+Trang admin: 
 https://nhatvietshipping.io.vn/thuyenvien/admin/login.php
 tk: hue - 12345
