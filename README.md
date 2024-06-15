@@ -13,6 +13,7 @@ Quảng bá thông tin: Tạo một nền tảng trực tuyến để công ty q
 Quản lý thuyền viên: Xây dựng hệ thống quản lý thông tin thuyền viên, bao gồm hồ sơ cá nhân, kinh nghiệm, chứng chỉ, và hợp đồng làm việc.
 
 **Ngôn ngữ lập trình**: HTML, CSS, PHP, JavaScript, MySQL.
+
 **Các chức năng**:
 
 Quảng bá thông tin: Quảng bá các dịch vụ và thông tin của công ty, đăng tin tuyển dụng, đăng ký thuyền viên.
