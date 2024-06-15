@@ -1,4 +1,18 @@
 # Crew-recruitment-and-management-website
+**Mô tả Dự án**
+Dự án nhằm xây dựng một ứng dụng web giúp quảng bá và quản lý thuyền viên cho một công ty vận tải biển. Mục tiêu của dự án là tạo ra một nền tảng trực tuyến để quảng bá các dịch vụ và thông tin liên quan, đồng thời cung cấp hệ thống quản lý thông tin thuyền viên hiệu quả.
+
+**Giới thiệu Công ty**
+Công ty vận tải biển Nhật Việt cung cấp các dịch vụ như cung ứng thuyền viên, đại lý hàng hải, vận tải hàng hóa viễn dương, và cung cấp dầu nhờn dầu đốt.
+
+**Mục tiêu Dự án**
+Quảng bá thông tin: Tạo một nền tảng trực tuyến để công ty quảng bá các dịch vụ và thông tin liên quan.
+Quản lý thuyền viên: Xây dựng hệ thống quản lý thông tin thuyền viên, bao gồm hồ sơ cá nhân, kinh nghiệm, chứng chỉ, và hợp đồng làm việc.
+**Ngôn ngữ lập trình**: HTML, CSS, PHP, JavaScript, MySQL.
+**Các chức năng**:
+Quảng bá thông tin: Quảng bá các dịch vụ và thông tin của công ty, đăng tin tuyển dụng, đăng ký thuyền viên.
+Quản lý thuyền viên: Quản lý thông tin thuyền viên, bao gồm hồ sơ, kinh nghiệm, quá trình đào tạo, chứng chỉ, hợp đồng, và khen thưởng kỷ luật.
+
 
 ![image](https://github.com/huedo2102/Crew-recruitment-and-management-website/assets/118194834/8464db7f-c0fb-4d9b-a6c3-4123c5f0042f)
 
