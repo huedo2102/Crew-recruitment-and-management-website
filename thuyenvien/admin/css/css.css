@@ -1,0 +1,636 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    background-color: #111111;
+    overflow-x: hidden;
+    padding-top: 0px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav b {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+    display: block;
+    border: none;
+    background: #cbc9c9;
+    width: 100%;
+    text-align: right;
+
+    outline: none;
+
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    float: right;
+    margin-bottom: 50px;
+
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Phần bảng */
+#tableSection {
+    height: 50vh;
+    /* Đặt chiều cao cố định là 50% của chiều cao màn hình */
+    overflow-y: auto;
+    /* Tạo thanh cuộn dọc khi bảng quá dài */
+    border: 1px solid #ccc;
+    /* Đường viền để phân biệt */
+    padding: 10px;
+    /* Khoảng cách để bảng không nằm sát cạnh */
+}
+
+/* Phần bảng */
+#tableSection2 {
+    height: 30vh;
+    /* Đặt chiều cao cố định là 50% của chiều cao màn hình */
+    overflow-y: auto;
+    /* Tạo thanh cuộn dọc khi bảng quá dài */
+    border: 1px solid #ccc;
+    /* Đường viền để phân biệt */
+    padding: 10px;
+    /* Khoảng cách để bảng không nằm sát cạnh */
+}
+
+/* Phần hiển thị chi tiết */
+#details {
+    border: 1px solid #ccc;
+    /* Đường viền để phân biệt */
+    padding: 10px;
+    /* Khoảng cách để phần chi tiết không nằm sát cạnh */
+    display: none;
+    margin-top: 20px;
+    /* Khoảng cách từ phần chi tiết đến bảng */
+}
+
+.btn {
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* Add a text color */
+    padding: 14px 28px;
+    /* Add some padding */
+    cursor: pointer;
+    /* Add a pointer cursor on mouse-over */
+    border-radius: 5px;
+}
+
+.info {
+    border-radius: 10px;
+    background-color: #4e73df;
+    font-size: 0.75rem;
+    /* Kích thước chữ nhỏ hơn */
+    padding: 0.5rem 0.75rem;
+    /* Kích thước lề nhỏ hơn */
+}
+
+.edit {
+    background-color: #21f356;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    display: inline-block;
+    /* Sử dụng display inline-block */
+
+}
+
+
+.delete {
+    background-color: #f34121;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    display: inline-block;
+    /* Sử dụng display inline-block */
+
+}
+
+.black {
+    background-color: #4b4847;
+    font-size: 0.75rem;
+    padding: 0.1rem 0.5rem;
+    display: inline-block;
+    /* Sử dụng display inline-block */
+}
+
+/* Blue */
+.info:hover {
+    background: #3953a3;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.chitiet {
+    border: 1px solid #ccc;
+    /* Thiết lập viền nhạt */
+    border-radius: 4px;
+    /* Bo tròn viền */
+    padding: 8px;
+    /* Tăng khoảng cách giữa nội dung và viền */
+    width: 200px;
+    /* Thiết lập chiều rộng */
+    background-color: #f9f9f9;
+    /* Màu nền nhạt */
+    box-sizing: border-box;
+    /* Kích thước tính cả border và padding */
+}
+
+.lbchitiet {
+    font-size: 14px;
+    /* Đặt kích thước chữ */
+    color: #727272;
+    /* Đặt màu chữ */
+}
+
+
+
+
+
+
+
+#thongtinchitiet {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: flex-start;
+    /* Căn ảnh lên trên để khớp với đỉnh của bảng */
+}
+
+#thongtinchitiet>* {
+    flex-shrink: 0;
+    /* Không cho phép thu gọn các phần tử con */
+}
+
+#myImg {
+    max-width: 100%;
+    /* Đảm bảo ảnh không vượt quá chiều rộng của container */
+    height: auto;
+    /* Giữ tỉ lệ khung hình của ảnh */
+}
+
+table {
+    flex-grow: 1;
+    /* Bảng sẽ mở rộng để điền vào không gian còn lại */
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #cbc9c9;
+}
+
+footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(122, 121, 121);
+}
+
+/* Phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #6d756d;
+    color: white;
+    border: 1px solid #6d756d;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Thiết lập kiểu cho nút */
+#filterButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+    text-decoration: none;
+}
+
+#filterButton:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+/* CSS cho form */
+#myFormthemditau,
+#myFormthemtruonghoc,
+#myFormsuaditau,
+#myFormsuatruonghoc,
+#myFormthemnguoithan,
+#myFormsuanguoithan,
+#myFormthemchungchi,
+#myFormsuachungchi,
+#myFormthemktkl,
+#myFormsuaktkl,
+#myFormthemtau,
+#myFormsuatau,
+#myFormthemhdlt,
+#myFormsuahdlt,
+#myFormthemkehoach,
+#myFormsuakehoach,
+#myFormthemcang,
+#myFormsuacang,
+#myFormthemchucdanh,
+#myFormsuachucdanh,
+#myFormthemloaichungchi,
+#myFormsualoaichungchi,
+#myFormthemloaitau,
+#myFormsualoaitau {
+    width: 500px;
+    max-height: 900px;
+    /* Đặt giá trị cố định cho chiều cao và sử dụng overflow-y */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+    overflow-y: auto;
+    /* Thêm thanh cuộn dọc khi cần */
+}
+
+/* CSS cho nút "x" */
+.close {
+    color: #666;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS cho tiêu đề */
+#myFormthemditau h2,
+#myFormthemtruonghoc h2,
+#myFormsuaditau h2,
+#myFormsuatruonghoc h2,
+#myFormthemnguoithan h2,
+#myFormsuanguoithan h2,
+#myFormthemchungchi h2,
+#myFormsuachungchi h2,
+#myFormthemktkl h2,
+#myFormsuaktkl h2,
+#myFormthemtau h2,
+#myFormsuatau h2,
+#myFormthemhdlt h2,
+#myFormsuahdlt h2,
+#myFormthemkehoach h2,
+#myFormsuakehoach h2,
+#myFormsuacang h2,
+#myFormthemcang h2,
+#myFormthemchucdanh h2,
+#myFormsuachucdanh h2,
+#myFormthemloaichungchi h2,
+#myFormsualoaichungchi h2,
+#myFormthemloaitau h2,
+#myFormsualoaitau h2 {
+    margin-top: 0;
+}
+
+/* CSS cho nhãn và ô input */
+#myFormthemditau label,
+#myFormthemtruonghoc label,
+#myFormsuaditau label,
+#myFormsuatruonghoc label,
+#myFormthemnguoithan label,
+#myFormsuanguoithan label,
+#myFormthemchungchi label,
+#myFormsuachungchi label,
+#myFormthemktkl label,
+#myFormsuaktkl label,
+#myFormthemtau label,
+#myFormsuatau label,
+#myFormthemhdlt label,
+#myFormsuahdlt label,
+#myFormthemkehoach label,
+#myFormsuakehoach label,
+#myFormsuacang label,
+#myFormthemcang label,
+#myFormthemchucdanh label,
+#myFormsuachucdanh label,
+#myFormthemloaichungchi label,
+#myFormsualoaichungchi label,
+#myFormthemloaitau label,
+#myFormsualoaitau label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#myFormthemditau input[type="text"],
+#myFormthemditau select,
+#myFormthemditau input[type="date"],
+#myFormthemtruonghoc input[type="text"],
+#myFormthemtruonghoc select,
+#myFormthemtruonghoc input[type="date"],
+#myFormsuaditau input[type="text"],
+#myFormsuaditau select,
+#myFormsuaditau input[type="date"],
+#myFormsuatruonghoc input[type="text"],
+#myFormsuatruonghoc select,
+#myFormsuatruonghoc input[type="date"],
+#myFormthemnguoithan input[type="text"],
+#myFormthemnguoithan select,
+#myFormthemnguoithan input[type="date"],
+#myFormthemnguoithan input[type="number"],
+#myFormsuanguoithan input[type="text"],
+#myFormsuanguoithan select,
+#myFormsuanguoithan input[type="date"],
+#myFormsuanguoithan input[type="number"],
+#myFormthemchungchi input[type="text"],
+#myFormthemchungchi select,
+#myFormthemchungchi input[type="date"],
+#myFormthemchungchi input[type="number"],
+#myFormsuachungchi input[type="text"],
+#myFormsuachungchi select,
+#myFormsuachungchi input[type="date"],
+#myFormsuachungchi input[type="number"],
+#myFormthemktkl input[type="text"],
+#myFormthemktkl select,
+#myFormthemktkl input[type="date"],
+#myFormthemktkl input[type="number"],
+#myFormsuaktkl input[type="text"],
+#myFormsuaktkl select,
+#myFormsuaktkl input[type="date"],
+#myFormsuaktkl input[type="number"],
+#myFormthemtau input[type="text"],
+#myFormthemtau select,
+#myFormthemtau input[type="date"],
+#myFormthemtau input[type="number"],
+#myFormsuatau input[type="text"],
+#myFormsuatau select,
+#myFormsuatau input[type="date"],
+#myFormsuatau input[type="number"],
+#myFormthemhdlt input[type="text"],
+#myFormthemhdlt select,
+#myFormthemhdlt input[type="date"],
+#myFormthemhdlt input[type="number"],
+#myFormsuahdlt input[type="text"],
+#myFormsuahdlt select,
+#myFormsuahdlt input[type="date"],
+#myFormsuahdlt input[type="number"],
+#myFormthemkehoach input[type="text"],
+#myFormthemkehoach select,
+#myFormthemkehoach input[type="date"],
+#myFormthemkehoach input[type="number"],
+#myFormsuakehoach input[type="text"],
+#myFormsuakehoach select,
+#myFormsuakehoach input[type="date"],
+#myFormsuakehoach input[type="number"],
+#myFormthemcang input[type="text"],
+#myFormthemcang select,
+#myFormthemcang input[type="date"],
+#myFormthemcang input[type="number"],
+#myFormsuacang input[type="text"],
+#myFormsuacang select,
+#myFormsuacang input[type="date"],
+#myFormsuacang input[type="number"],
+#myFormthemchucdanh input[type="text"],
+#myFormthemchucdanh select,
+#myFormthemchucdanh input[type="date"],
+#myFormthemchucdanh input[type="number"],
+#myFormsuachucdanh input[type="text"],
+#myFormsuachucdanh select,
+#myFormsuachucdanh input[type="date"],
+#myFormsuachucdanh input[type="number"],
+#myFormthemloaichungchi input[type="text"],
+#myFormthemloaichungchi select,
+#myFormthemloaichungchi input[type="date"],
+#myFormthemloaichungchi input[type="number"],
+#myFormsualoaichungchi input[type="text"],
+#myFormsualoaichungchi select,
+#myFormsualoaichungchi input[type="date"],
+#myFormsualoaichungchi input[type="number"],
+#myFormthemloaitau input[type="text"],
+#myFormthemloaitau select,
+#myFormthemloaitau input[type="date"],
+#myFormthemloaitau nput[type="number"],
+#myFormsualoaitau input[type="text"],
+#myFormsualoaitau select,
+#myFormsualoaitau input[type="date"],
+#myFormsualoaitau nput[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* CSS cho nút "Lưu" */
+#myFormthemditau input[type="submit"],
+#myFormthemtruonghoc input[type="submit"],
+#myFormsuaditau input[type="submit"],
+#myFormsuatruonghoc input[type="submit"],
+#myFormthemnguoithan input[type="submit"],
+#myFormsuanguoithan input[type="submit"],
+#myFormthemchungchi input[type="submit"],
+#myFormsuachungchi input[type="submit"],
+#myFormthemktkl input[type="submit"],
+#myFormsuaktkl input[type="submit"],
+#myFormthemtau input[type="submit"],
+#myFormsuatau input[type="submit"],
+#myFormthemhdlt input[type="submit"],
+#myFormsuahdlt input[type="submit"],
+#myFormthemkehoach input[type="submit"],
+#myFormsuakehoach input[type="submit"],
+#myFormthemcang input[type="submit"],
+#myFormsuacang input[type="submit"],
+#myFormthemchucdanh input[type="submit"],
+#myFormsuachucdanh input[type="submit"],
+#myFormthemloaichungchi input[type="submit"],
+#myFormsualoaichungchi input[type="submit"],
+#myFormthemloaitau input[type="submit"],
+#myFormsualoaitau input[type="submit"] {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myFormthemditau input[type="submit"]:hover,
+#myFormthemtruonghoc input[type="submit"]:hover,
+#myFormsuaditau input[type="submit"]:hover,
+#myFormsuatruonghoc input[type="submit"]:hover,
+#myFormthemnguoithan input[type="submit"]:hover,
+#myFormsuanguoithan input[type="submit"]:hover,
+#myFormthemchungchi input[type="submit"]:hover,
+#myFormsuachungchi input[type="submit"]:hover,
+#myFormthemktkl input[type="submit"]:hover,
+#myFormsuaktkl input[type="submit"]:hover,
+#myFormthemtau input[type="submit"]:hover,
+#myFormsuatau input[type="submit"]:hover,
+#myFormthemhdlt input[type="submit"]:hover,
+#myFormsuahdlt input[type="submit"]:hover,
+#myFormthemkehoach input[type="submit"]:hover,
+#myFormsuakehoach input[type="submit"]:hover,
+#myFormthemcang input[type="submit"]:hover,
+#myFormsuacang input[type="submit"]:hover,
+#myFormthemchucdanh input[type="submit"]:hover,
+#myFormsuachucdanh input[type="submit"]:hover,
+#myFormthemloaichungchi input[type="submit"]:hover,
+#myFormsualoaichungchi input[type="submit"]:hover,
+#myFormthemloaitau input[type="submit"]:hover,
+#myFormsualoaitau input[type="submit"]:hover {
+    background-color: #2196F3;
+}
+
+
