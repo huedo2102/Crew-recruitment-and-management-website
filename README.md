@@ -17,6 +17,7 @@ Quản lý thuyền viên: Xây dựng hệ thống quản lý thông tin thuy�
 **Các chức năng**:
 
 Quảng bá thông tin: Quảng bá các dịch vụ và thông tin của công ty, đăng tin tuyển dụng, đăng ký thuyền viên.
+
 Quản lý thuyền viên: Quản lý thông tin thuyền viên, bao gồm hồ sơ, kinh nghiệm, quá trình đào tạo, chứng chỉ, hợp đồng, và khen thưởng kỷ luật.
 
 
