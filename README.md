@@ -10,6 +10,7 @@ Công ty vận tải biển Nhật Việt cung cấp các dịch vụ như cung 
 **Mục tiêu Dự án**
 
 Quảng bá thông tin: Tạo một nền tảng trực tuyến để công ty quảng bá các dịch vụ và thông tin liên quan.
+
 Quản lý thuyền viên: Xây dựng hệ thống quản lý thông tin thuyền viên, bao gồm hồ sơ cá nhân, kinh nghiệm, chứng chỉ, và hợp đồng làm việc.
 
 **Ngôn ngữ lập trình**: HTML, CSS, PHP, JavaScript, MySQL.
